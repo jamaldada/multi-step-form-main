@@ -17,6 +17,12 @@ const flexfour = document.querySelector(".flexfour");
 const forms = document.querySelectorAll(".forms input");
 const switcher = document.querySelector(".switcher");
 const addons = document.querySelectorAll(".payservice");
+const arc = document.querySelector(".j");
+const ard = document.querySelector(".e");
+const are = document.querySelector(".o");
+const era = document.querySelector(".x");
+const erb = document.querySelector(".y");
+const erc = document.querySelector(".z");
 
 let time;
 const obj = {
@@ -89,7 +95,7 @@ nxtfive.addEventListener("click", function () {
   flexfour.classList.remove("active");
 });
 
-function validateForm() {
+/* function validateForm() {
   let valid = true;
   for (let i = 0; i < forms.length; i++) {
     if (!forms[i].value) {
@@ -201,3 +207,118 @@ function setTotal() {
 function setTime(t) {
   return (time = t);
 }
+ */
+/* arc.addEventListener("click", function () {
+  document.querySelector(".plan-price").textContent =
+    document.querySelector(".ji").value;
+  ji.style.color = " black ";
+}); */
+
+arc.addEventListener("click", function () {
+  // Select the element with class "ji"
+  /*  var ji = document.querySelector(".ji");
+
+  // Change the text content of ".plan-price" to the value of ".ji"
+  document.querySelector(".plan-price").textContent = ji.value;
+ */
+
+  arc.classList.add("selecte");
+  ard.classList.remove("selecte");
+  are.classList.remove("selecte");
+
+  document.querySelector(".plan-price").innerHTML = "";
+
+  const html = `
+  <p class="plan-price">$89/mo</p>
+     `;
+
+  document.querySelector(".plan-price").insertAdjacentHTML("afterbegin", html);
+});
+
+ard.addEventListener("click", function () {
+  /*  // Select the element with class "ji"
+  var ji = document.querySelector(".ji");
+
+  // Change the text content of ".plan-price" to the value of ".ji"
+  document.querySelector(".plan-price").textContent = ji.value;
+ */
+
+  ard.classList.add("selecte");
+  arc.classList.remove("selecte");
+  are.classList.remove("selecte");
+
+  document.querySelector(".plan-price").innerHTML = "";
+
+  const html = `
+  <p class="plan-price">$12/mo</p>
+     `;
+
+  document.querySelector(".plan-price").insertAdjacentHTML("afterbegin", html);
+});
+
+are.addEventListener("click", function () {
+  // Select the element with class "ji"
+  /* var ji = document.querySelector(".ji");
+
+  // Change the text content of ".plan-price" to the value of ".ji"
+  document.querySelector(".plan-price").textContent = ji.value;
+ */
+
+  are.classList.add("selecte");
+  ard.classList.remove("selecte");
+  arc.classList.remove("selecte");
+
+  document.querySelector(".plan-price").innerHTML = "";
+
+  let ads = 15;
+  const html = `
+  <p class="plan-price">$${ads}/mo</p>
+     `;
+
+  document.querySelector(".plan-price").insertAdjacentHTML("afterbegin", html);
+});
+
+era.addEventListener("click", function () {
+  document.querySelector(".servic-price").innerHTML = "";
+  const html = `
+  <span class="servic-price">+$1/mo</span>
+  `;
+
+  document
+    .querySelector(".servic-price")
+    .insertAdjacentHTML("afterbegin", html);
+});
+
+erb.addEventListener("click", function () {
+  document.querySelector(".servic-price").innerHTML = "";
+  const html = `
+  <span class="servic-price">+$2/mo</span>
+
+
+  
+  `;
+
+  document
+    .querySelector(".servic-price")
+    .insertAdjacentHTML("afterbegin", html);
+});
+
+erc.addEventListener("click", function () {
+  document.querySelector(".servic-price").innerHTML = "";
+  const html = `
+  <span class="servic-price">+$2/mo</span>
+  `;
+
+  document
+    .querySelector(".servic-price")
+    .insertAdjacentHTML("afterbegin", html);
+});
+
+(function () {
+  document.querySelector(".total").innerHTML = "";
+  const html = `
+  <p class="total">Total (per month) <b>+$120/mo</b></p>
+  `;
+
+  document.querySelector(".total").insertAdjacentHTML("afterbegin", html);
+});
