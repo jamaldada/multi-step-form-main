@@ -229,10 +229,17 @@ arc.addEventListener("click", function () {
   document.querySelector(".plan-price").innerHTML = "";
 
   const html = `
-  <p class="plan-price">$89/mo</p>
+  <p class="plan-price">$9/mo</p>
      `;
 
   document.querySelector(".plan-price").insertAdjacentHTML("afterbegin", html);
+
+  document.querySelector(".plan-name").innerHTML = "";
+  const htl = `
+  <p class="plan-name">Arcade(Monthly)</p>
+     `;
+
+  document.querySelector(".plan-name").insertAdjacentHTML("afterbegin", htl);
 });
 
 ard.addEventListener("click", function () {
@@ -254,6 +261,13 @@ ard.addEventListener("click", function () {
      `;
 
   document.querySelector(".plan-price").insertAdjacentHTML("afterbegin", html);
+
+  document.querySelector(".plan-name").innerHTML = "";
+  const htl = `
+  <p class="plan-name">Advanced(Monthly)</p>
+     `;
+
+  document.querySelector(".plan-name").insertAdjacentHTML("afterbegin", htl);
 });
 
 are.addEventListener("click", function () {
@@ -276,6 +290,13 @@ are.addEventListener("click", function () {
      `;
 
   document.querySelector(".plan-price").insertAdjacentHTML("afterbegin", html);
+
+  document.querySelector(".plan-name").innerHTML = "";
+  const htl = `
+  <p class="plan-name">pro(Monthly)</p>
+     `;
+
+  document.querySelector(".plan-name").insertAdjacentHTML("afterbegin", htl);
 });
 
 era.addEventListener("click", function () {
