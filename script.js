@@ -292,11 +292,11 @@ are.addEventListener("click", function () {
   document.querySelector(".plan-price").insertAdjacentHTML("afterbegin", html);
 
   document.querySelector(".plan-name").innerHTML = "";
-  const htl = `
+  const htrl = `
   <p class="plan-name">Pro(Monthly)</p>
      `;
 
-  document.querySelector(".plan-name").insertAdjacentHTML("afterbegin", htl);
+  document.querySelector(".plan-name").insertAdjacentHTML("afterbegin", htrl);
 });
 
 era.addEventListener("click", function () {
