@@ -193,6 +193,12 @@ label {
   background-color: hsl(229, 24%, 87%);
 }
 
+.ba {
+  background-color: transparent;
+  border: none;
+  border-radius: 7px;
+}
+
 .dicons b {
   color: hsl(213, 96%, 18%);
 }
@@ -255,12 +261,16 @@ label {
   margin-bottom: 1rem;
   margin-top: 2rem;
 }
+.firstserv {
+  font-size: 12px;
+}
 
 .special {
   display: flex;
   gap: 7rem;
   background-color: ;
-  width: 30rem;
+  width: 20rem;
+  height: 2.5rem;
 }
 
 .servall {
@@ -293,8 +303,16 @@ label {
   color: hsl(243, 100%, 62%);
 }
 
+.papa {
+  width: 30rem;
+  height: 5rem;
+  background-color: transparent;
+  border: none;
+}
+
 .serv {
   color: hsl(231, 11%, 63%);
+  font-size: 13px;
 }
 
 .payservice:hover {
@@ -317,7 +335,7 @@ label {
   padding: 1.5rem;
   border-radius: 10px;
 }
-.selected {
+.selecte {
   border: 2px solid hsl(243, 100%, 62%);
   background-color: hsl(217, 100%, 97%);
 }
@@ -476,7 +494,7 @@ input:checked + .slider:before {
   display: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 500px) {
   body {
     position: relative;
     background-color: hsl(206, 94%, 87%);
@@ -596,6 +614,10 @@ input:checked + .slider:before {
     background-color: white;
     padding: 1rem;
     border-radius: 10px;
+  }
+
+  .papa {
+    width: 18rem;
   }
 
   .special {
