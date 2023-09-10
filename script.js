@@ -293,7 +293,7 @@ are.addEventListener("click", function () {
 
   document.querySelector(".plan-name").innerHTML = "";
   const htl = `
-  <p class="plan-name">pro(Monthly)</p>
+  <p class="plan-name">Pro(Monthly)</p>
      `;
 
   document.querySelector(".plan-name").insertAdjacentHTML("afterbegin", htl);
